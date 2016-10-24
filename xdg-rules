@@ -1,5 +1,6 @@
 # first regex that matches is used
-match %r{https?://(www.)?youtube\.[a-z]{2,4}/\w+}, "mpv"
+match %r{https?://(www\.)?youtube\.[a-z]{2,4}/\w+}, "urxvtc -e mpsyt url"
+match %r{https?://(www\.)?youtu\.be/\w+}, "urxvtc -e mpsyt url"
 
 # instead of a program, you can pass a block of ruby code which takes one
 # parameter (the input filename)
