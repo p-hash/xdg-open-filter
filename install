@@ -1,3 +1,0 @@
-#!/bin/bash
-cp xdg-open ~/.local/bin/
-cp xdg-rules ~/.config/
