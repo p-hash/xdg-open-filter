@@ -10,8 +10,9 @@ fi
 if [[ -e "$rule_path" ]]; then
     source "$rule_path"
 else
-    echo "No rules file found, please create one at $rule_path (see README.md)."
-    exit 1
+    echo "No rules file found, create one at $rule_path if you want to use xdg-open-filter."
+    eval "$XDG_OPEN $1"
+    exit $?
 fi
 
 for regex in "${!XDG_RULES[@]}"; do
